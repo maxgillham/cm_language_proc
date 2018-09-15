@@ -1,336 +1,336 @@
 {
- 'data': [
+ "data": [
   {
-   'short': 18,
-   'long': 2018
+   "short": 18,
+   "long": 2018
   },
   {
-   'short': 19,
-   'long': 2019
+   "short": 19,
+   "long": 2019
   },
   {
-   'short': 20,
-   'long': 2020
+   "short": 20,
+   "long": 2020
   },
   {
-   'short': 21,
-   'long': 2021
+   "short": 21,
+   "long": 2021
   },
   {
-   'short': 22,
-   'long': 2022
+   "short": 22,
+   "long": 2022
   },
   {
-   'short': 23,
-   'long': 2023
+   "short": 23,
+   "long": 2023
   },
   {
-   'short': 24,
-   'long': 2024
+   "short": 24,
+   "long": 2024
   },
   {
-   'short': 25,
-   'long': 2025
+   "short": 25,
+   "long": 2025
   },
   {
-   'short': 26,
-   'long': 2026
+   "short": 26,
+   "long": 2026
   },
   {
-   'short': 27,
-   'long': 2027
+   "short": 27,
+   "long": 2027
   },
   {
-   'short': 28,
-   'long': 2028
+   "short": 28,
+   "long": 2028
   },
   {
-   'short': 29,
-   'long': 2029
+   "short": 29,
+   "long": 2029
   },
   {
-   'short': 30,
-   'long': 2030
+   "short": 30,
+   "long": 2030
   },
   {
-   'short': 31,
-   'long': 2031
+   "short": 31,
+   "long": 2031
   },
   {
-   'short': 32,
-   'long': 2032
+   "short": 32,
+   "long": 2032
   },
   {
-   'short': 33,
-   'long': 2033
+   "short": 33,
+   "long": 2033
   },
   {
-   'short': 34,
-   'long': 2034
+   "short": 34,
+   "long": 2034
   },
   {
-   'short': 35,
-   'long': 2035
+   "short": 35,
+   "long": 2035
   },
   {
-   'short': 36,
-   'long': 2036
+   "short": 36,
+   "long": 2036
   },
   {
-   'short': 37,
-   'long': 2037
+   "short": 37,
+   "long": 2037
   },
   {
-   'short': 38,
-   'long': 2038
+   "short": 38,
+   "long": 2038
   },
   {
-   'short': 39,
-   'long': 2039
+   "short": 39,
+   "long": 2039
   },
   {
-   'short': 40,
-   'long': 2040
+   "short": 40,
+   "long": 2040
   },
   {
-   'short': 41,
-   'long': 2041
+   "short": 41,
+   "long": 2041
   },
   {
-   'short': 42,
-   'long': 2042
+   "short": 42,
+   "long": 2042
   },
   {
-   'short': 43,
-   'long': 2043
+   "short": 43,
+   "long": 2043
   },
   {
-   'short': 44,
-   'long': 2044
+   "short": 44,
+   "long": 2044
   },
   {
-   'short': 45,
-   'long': 2045
+   "short": 45,
+   "long": 2045
   },
   {
-   'short': 46,
-   'long': 2046
+   "short": 46,
+   "long": 2046
   },
   {
-   'short': 47,
-   'long': 2047
+   "short": 47,
+   "long": 2047
   },
   {
-   'short': 48,
-   'long': 2048
+   "short": 48,
+   "long": 2048
   },
   {
-   'short': 49,
-   'long': 2049
+   "short": 49,
+   "long": 2049
   },
   {
-   'short': 50,
-   'long': 2050
+   "short": 50,
+   "long": 2050
   },
   {
-   'short': 51,
-   'long': 2051
+   "short": 51,
+   "long": 2051
   },
   {
-   'short': 52,
-   'long': 2052
+   "short": 52,
+   "long": 2052
   },
   {
-   'short': 53,
-   'long': 2053
+   "short": 53,
+   "long": 2053
   },
   {
-   'short': 54,
-   'long': 2054
+   "short": 54,
+   "long": 2054
   },
   {
-   'short': 55,
-   'long': 2055
+   "short": 55,
+   "long": 2055
   },
   {
-   'short': 56,
-   'long': 2056
+   "short": 56,
+   "long": 2056
   },
   {
-   'short': 57,
-   'long': 2057
+   "short": 57,
+   "long": 2057
   },
   {
-   'short': 58,
-   'long': 2058
+   "short": 58,
+   "long": 2058
   },
   {
-   'short': 59,
-   'long': 2059
+   "short": 59,
+   "long": 2059
   },
   {
-   'short': 60,
-   'long': 2060
+   "short": 60,
+   "long": 2060
   },
   {
-   'short': 61,
-   'long': 2061
+   "short": 61,
+   "long": 2061
   },
   {
-   'short': 62,
-   'long': 2062
+   "short": 62,
+   "long": 2062
   },
   {
-   'short': 63,
-   'long': 2063
+   "short": 63,
+   "long": 2063
   },
   {
-   'short': 64,
-   'long': 2064
+   "short": 64,
+   "long": 2064
   },
   {
-   'short': 65,
-   'long': 2065
+   "short": 65,
+   "long": 2065
   },
   {
-   'short': 66,
-   'long': 2066
+   "short": 66,
+   "long": 2066
   },
   {
-   'short': 67,
-   'long': 2067
+   "short": 67,
+   "long": 2067
   },
   {
-   'short': 68,
-   'long': 2068
+   "short": 68,
+   "long": 2068
   },
   {
-   'short': 69,
-   'long': 2069
+   "short": 69,
+   "long": 2069
   },
   {
-   'short': 70,
-   'long': 2070
+   "short": 70,
+   "long": 2070
   },
   {
-   'short': 71,
-   'long': 2071
+   "short": 71,
+   "long": 2071
   },
   {
-   'short': 72,
-   'long': 2072
+   "short": 72,
+   "long": 2072
   },
   {
-   'short': 73,
-   'long': 2073
+   "short": 73,
+   "long": 2073
   },
   {
-   'short': 74,
-   'long': 2074
+   "short": 74,
+   "long": 2074
   },
   {
-   'short': 75,
-   'long': 2075
+   "short": 75,
+   "long": 2075
   },
   {
-   'short': 76,
-   'long': 2076
+   "short": 76,
+   "long": 2076
   },
   {
-   'short': 77,
-   'long': 2077
+   "short": 77,
+   "long": 2077
   },
   {
-   'short': 78,
-   'long': 2078
+   "short": 78,
+   "long": 2078
   },
   {
-   'short': 79,
-   'long': 2079
+   "short": 79,
+   "long": 2079
   },
   {
-   'short': 80,
-   'long': 2080
+   "short": 80,
+   "long": 2080
   },
   {
-   'short': 81,
-   'long': 2081
+   "short": 81,
+   "long": 2081
   },
   {
-   'short': 82,
-   'long': 2082
+   "short": 82,
+   "long": 2082
   },
   {
-   'short': 83,
-   'long': 2083
+   "short": 83,
+   "long": 2083
   },
   {
-   'short': 84,
-   'long': 2084
+   "short": 84,
+   "long": 2084
   },
   {
-   'short': 85,
-   'long': 2085
+   "short": 85,
+   "long": 2085
   },
   {
-   'short': 86,
-   'long': 2086
+   "short": 86,
+   "long": 2086
   },
   {
-   'short': 87,
-   'long': 2087
+   "short": 87,
+   "long": 2087
   },
   {
-   'short': 88,
-   'long': 2088
+   "short": 88,
+   "long": 2088
   },
   {
-   'short': 89,
-   'long': 2089
+   "short": 89,
+   "long": 2089
   },
   {
-   'short': 90,
-   'long': 2090
+   "short": 90,
+   "long": 2090
   },
   {
-   'short': 91,
-   'long': 2091
+   "short": 91,
+   "long": 2091
   },
   {
-   'short': 92,
-   'long': 2092
+   "short": 92,
+   "long": 2092
   },
   {
-   'short': 93,
-   'long': 2093
+   "short": 93,
+   "long": 2093
   },
   {
-   'short': 94,
-   'long': 2094
+   "short": 94,
+   "long": 2094
   },
   {
-   'short': 95,
-   'long': 2095
+   "short": 95,
+   "long": 2095
   },
   {
-   'short': 96,
-   'long': 2096
+   "short": 96,
+   "long": 2096
   },
   {
-   'short': 97,
-   'long': 2097
+   "short": 97,
+   "long": 2097
   },
   {
-   'short': 98,
-   'long': 2098
+   "short": 98,
+   "long": 2098
   },
   {
-   'short': 99,
-   'long': 2099
+   "short": 99,
+   "long": 2099
   },
   {
-   'short': 100,
-   'long': 2100
+   "short": 100,
+   "long": 2100
   }
  ]
 }

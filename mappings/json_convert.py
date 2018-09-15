@@ -3,7 +3,7 @@ import csv
 import json
 
 def stringify(s):
-    return "'"+s+"'"
+    return "\""+s+"\""
 
 def get_numpy(filename):
     reader = csv.reader(open(filename, "r"), delimiter=",")
@@ -22,17 +22,17 @@ def generate_maturity_mapping(start=18,stop=100):
 
 def convert_to_json(data,filename,header0,header1):
     #PYTHON'S JSON DUMP LIBRARY SUCKS
-    s = "{\n 'data': [\n"
+    s = "{\n \"data\": [\n"
     for i,row in enumerate(data):
         s += '  {\n'
         for j,element in enumerate(row):
             if j < len(row)-1:
-                s += '   {}: {},\n'.format("'"+header0+"'",element)
+                s += '   {}: {},\n'.format("\""+header0+"\"",element)
             else:
                 if i < len(data)-1:
-                    s += '   {}: {}\n  }},\n'.format("'"+header1+"'",element)
+                    s += '   {}: {}\n  }},\n'.format("\""+header1+"\"",element)
                 else:
-                    s += '   {}: {}\n  }}\n'.format("'"+header1+"'",element)
+                    s += '   {}: {}\n  }}\n'.format("\""+header1+"\"",element)
     s += ' ]\n}'
     with open(filename,'w') as file:
         file.write(s)
