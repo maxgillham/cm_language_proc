@@ -5,67 +5,6 @@ import Dropzone from 'react-dropzone'
 import styled from "styled-components";
 import axios, { post } from 'axios';
 
-class Basic extends React.Component {
-  constructor() {
-    super()
-    this.state = { files: [] }
-  }
-
-  onDrop(files) {
-    this.setState({
-      files
-    });
-    console.log(files);
-    //fileUpload(files[0]);
-  }
-
-  // fileUpload(file){
-  //   const url = 'http://example.com/file-upload';
-  //   const formData = new FormData();
-  //   formData.append('file',file)
-  //   const config = {
-  //       headers: {
-  //           'content-type': 'multipart/form-data'
-  //       }
-  //   }
-  //   return  post(url, formData,config)
-  // }
-
-
-  // revProcessFile = () => {
-  //   axios.post('/user', {
-  //     firstName: 'Fred',
-  //     lastName: 'Flintstone'
-  //   })
-  //   .then(function (response) {
-  //     console.log(response);
-  //   })
-  //   .catch(function (error) {
-  //     console.log(error);
-  //   });
-  // }
-
-  render() {
-    return (
-      <section>
-        <div className="dropzone">
-          <Dropzone onDrop={this.onDrop.bind(this)}>
-            <p>Try dropping some files here, or click to select files to upload.</p>
-          </Dropzone>
-        </div>
-        <aside>
-          <h2>Dropped files</h2>
-          <ul>
-            {
-              this.state.files.map(f => <li key={f.name}>{f.name} - {f.size} bytes</li>)
-            }
-          </ul>
-        </aside>
-      </section>
-    );
-  }
-}
-
 class App extends Component {
   render() {
     return (
@@ -73,7 +12,6 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to Structure Pop</h1>
         </header>
-        <Basic />
         <SimpleReactFileUpload />
       </div>
     );
@@ -107,18 +45,35 @@ export class SimpleReactFileUpload extends React.Component {
     formData.append('media',file);
     let token = "01imrH9aRwY_I8TqTzSJOjQHA4MqwsD4LrgzZK_b3USSMrhT3lumzv60Gfwp6niXZNbvDomlg0P064zLDgVO8jq-vwtK4";
     const config = {
-        withCredentials: false,
         headers: {
             'content-type': 'multipart/form-data',
             'Authorization': "Bearer " + token
         }
     }
+    console.log("lolololololol");
     return post(url, formData,config);
   }
 
+  onFormServerSubmit = (e) => {
+    e.preventDefault() // Stop form submit
+    const url = 'https://api.rev.ai/revspeech/v1beta/jobs';
+    const formData = new FormData();
+    formData.append('media',this.state.file);
+    let token = "01imrH9aRwY_I8TqTzSJOjQHA4MqwsD4LrgzZK_b3USSMrhT3lumzv60Gfwp6niXZNbvDomlg0P064zLDgVO8jq-vwtK4";
+    const config = {
+        headers: {
+            'content-type': 'multipart/form-data',
+            'Authorization': "Bearer " + token
+        }
+    }
+    console.log("lolololololol");
+    return post(url, formData,config);
+  }
+
+
   render() {
     return (
-      <form onSubmit={this.onFormSubmit}>
+      <form onSubmit={this.onFormServerSubmit}>
         <h1>File Upload</h1>
         <input type="file" onChange={this.onChange} />
         <button type="submit">Upload</button>
