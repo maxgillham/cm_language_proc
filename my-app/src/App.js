@@ -4,6 +4,9 @@ import './App.css';
 import Dropzone from 'react-dropzone'
 import styled from "styled-components";
 import axios, { post } from 'axios';
+import { Button, Card, Image } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
+import up from "./up.png";
 
 const TitleYel = styled.div`
   display: inline-block;
@@ -21,10 +24,6 @@ padding: 0.25em 1em;
 border: 2px solid #045bb3;
 border-radius: 3px;
 background-color: #ccdbed;
-`;
-
-const SpecialInput = styled(SpecialButton)`
-height: 27px;
 `;
 
 
@@ -48,7 +47,8 @@ export class SimpleReactFileUpload extends React.Component {
   constructor(props) {
     super(props);
     this.state ={
-      file:null
+      file:null,
+      clicked: false
     }
     this.onFormSubmit = this.onFormSubmit.bind(this)
     this.onChange = this.onChange.bind(this)
@@ -97,11 +97,101 @@ export class SimpleReactFileUpload extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.onFormServerSubmit}>
-        <h1>File Upload</h1>
-        <SpecialInput input type="file" onChange={this.onChange} />
-        <SpecialButton type="submit">Upload</SpecialButton>
-      </form>
+      <div>
+        {this.state.clicked ?       <form onSubmit={this.onFormServerSubmit}>
+                <h1>File Upload</h1>
+                <input type="file" onChange={this.onChange} />
+                <SpecialButton type="submit" onClick={() => this.setState({clicked: true})}>Upload</SpecialButton>
+              </form>
+              :
+
+            <div>
+                <div style={{marginRight: 115, marginTop: 25}}>
+                  <h2 style={{display: 'inline'}}>Salesperson: </h2><p style={{display: 'inline', paddingRight: 450}}>  "Hello"</p>
+                </div>
+                <br/> <hr/>
+                <h2 style={{display: 'inline'}}>Client:</h2><p style={{display: 'inline'}}>  "Hello"</p>
+                <div style={{position: 'absolute', right: 0, top: 100}}>
+                <Card>
+                  <Card.Content>
+                    <Image floated='right' size='mini' src={up}/>
+                    <Card.Header>Jenny Lawrence</Card.Header>
+                    <Card.Meta>Sentiment Rating: 95%</Card.Meta>
+                    <Card.Description>Jenny sounds interested in APPL Stock!</Card.Description>
+                  </Card.Content>
+                  <Card.Content extra>
+                    <div className='ui two buttons'>
+                      <Button basic color='green'>
+                        Agree
+                      </Button>
+                      <Button basic color='red'>
+                        Disagree
+                      </Button>
+                    </div>
+                  </Card.Content>
+                </Card>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/> <hr/> <hr/>
+              <div style={{marginRight: 115, marginTop: 125}}>
+                <h2 style={{display: 'inline'}}>Salesperson: </h2><p style={{display: 'inline', paddingRight: 450}}>  "Hello"</p>
+              </div>
+              <br/> <hr/>
+              <h2 style={{display: 'inline'}}>Client:</h2><p style={{display: 'inline'}}>  "Hello"</p>
+              <div style={{position: 'absolute', right: 0, top: 395}}>
+              <Card>
+                <Card.Content>
+                  <Image floated='right' size='mini' src={up}/>
+                  <Card.Header>Jenny Lawrence</Card.Header>
+                  <Card.Meta>Sentiment Rating: 95%</Card.Meta>
+                  <Card.Description>Jenny sounds interested in APPL Stock!</Card.Description>
+                </Card.Content>
+                <Card.Content extra>
+                  <div className='ui two buttons'>
+                    <Button basic color='green'>
+                      Agree
+                    </Button>
+                    <Button basic color='red'>
+                      Disagree
+                    </Button>
+                  </div>
+                </Card.Content>
+              </Card>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/> <hr/> <hr/>
+              <div style={{marginRight: 115, marginTop: 125}}>
+                <h2 style={{display: 'inline'}}>Salesperson: </h2><p style={{display: 'inline', paddingRight: 450}}>  "Hello"</p>
+              </div>
+              <br/> <hr/>
+              <h2 style={{display: 'inline'}}>Client:</h2><p style={{display: 'inline'}}>  "Hello"</p>
+              <div style={{position: 'absolute', right: 0, top: 675}}>
+              <Card>
+                <Card.Content>
+                  <Image floated='right' size='mini' src={up}/>
+                  <Card.Header>Jenny Lawrence</Card.Header>
+                  <Card.Meta>Sentiment Rating: 95%</Card.Meta>
+                  <Card.Description>Jenny sounds interested in APPL Stock!</Card.Description>
+                </Card.Content>
+                <Card.Content extra>
+                  <div className='ui two buttons'>
+                    <Button basic color='green'>
+                      Agree
+                    </Button>
+                    <Button basic color='red'>
+                      Disagree
+                    </Button>
+                  </div>
+                </Card.Content>
+              </Card>
+              </div>
+            </div>}
+      </div>
+
    )
   }
 }
