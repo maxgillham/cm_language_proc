@@ -27,7 +27,7 @@ def mse(x,y):
     return np.sum((x-y)**2)/x.shape[0]
 
 def notch_accuracy(x,y,notch=0):
-    return np.sum(np.abs(x-y)<=notch)/x.shape[0]
+    return np.sum(np.abs(np.round(x)-y)<=notch)/x.shape[0]
 
 if __name__ == '__main__':
     npdata,truth,headers = get_numpy()
