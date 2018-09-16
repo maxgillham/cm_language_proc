@@ -5,12 +5,36 @@ import Dropzone from 'react-dropzone'
 import styled from "styled-components";
 import axios, { post } from 'axios';
 
+const TitleYel = styled.div`
+  display: inline-block;
+  color: #ccdbed;
+  font-size: 3.5em;
+  text-align: center;
+`;
+
+const SpecialButton = styled.button`
+display: inline-block;
+color: #045bb3;
+font-size: 1em;
+margin: 1em;
+padding: 0.25em 1em;
+border: 2px solid #045bb3;
+border-radius: 3px;
+background-color: #ccdbed;
+`;
+
+const SpecialInput = styled(SpecialButton)`
+height: 27px;
+`;
+
+
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Welcome to Structure Pop</h1>
+          <TitleYel>Welcome to Structure Pop</TitleYel>
         </header>
         <SimpleReactFileUpload />
       </div>
@@ -63,7 +87,7 @@ export class SimpleReactFileUpload extends React.Component {
     const config = {
         headers: {
             'content-type': 'multipart/form-data',
-            'Authorization': "Bearer " + toke4n
+            'Authorization': "Bearer " + token
         }
     }
     console.log("lolololololol");
@@ -75,8 +99,8 @@ export class SimpleReactFileUpload extends React.Component {
     return (
       <form onSubmit={this.onFormServerSubmit}>
         <h1>File Upload</h1>
-        <input type="file" onChange={this.onChange} />
-        <button type="submit">Upload</button>
+        <SpecialInput input type="file" onChange={this.onChange} />
+        <SpecialButton type="submit">Upload</SpecialButton>
       </form>
    )
   }
