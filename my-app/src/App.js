@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <TitleYel>Welcome to Structure Pop</TitleYel>
+          <TitleYel>Welcome to Structurall</TitleYel>
         </header>
         <SimpleReactFileUpload />
       </div>
@@ -109,18 +109,18 @@ export class SimpleReactFileUpload extends React.Component {
               </form>
         : [(this.state.loading ?   <button onClick={() => this.setState({loading: false})}><Image width={50} height={50} src={loading}/></button> : <div>
             <div style={{marginRight: 115, marginTop: 25}}>
-              <h2 style={{display: 'inline'}}>Salesperson: </h2><p style={{display: 'inline', paddingRight: 450}}>  "Hello"</p>
+              <h2 style={{display: 'inline'}}>Salesperson: </h2><p style={{display: 'inline', paddingRight: 450}}>  "We just got in some Facebook 32?  Are you interested?"</p>
             </div>
             <br/> <hr/>
-            <h2 style={{display: 'inline'}}>Client:</h2><p style={{display: 'inline'}}>  "Hello"</p>
+            <h2 style={{display: 'inline'}}>Client:</h2><p style={{display: 'inline'}}>  "No way, your asking price is way too high and for that credit rating."</p>
             <div style={{position: 'absolute', right: 0, top: 100}}>
             <Card>
               <Card.Content>
                 <Image floated='right' size='mini' src={down}/>
-                <Card.Header>Jenny Lawrence</Card.Header>
-                <Card.Meta>Sentiment Rating: 95%</Card.Meta>
-                <Card.Description>Jenny sounds interested in APPL<br/>
-                <i>Keywords: Buy, Interested</i></Card.Description>
+                <Card.Header>Facebook 32</Card.Header>
+                <Card.Meta>Sentiment Rating: 25.65%</Card.Meta>
+                <Card.Description>Keywords: Facebook,  asking price,  credit rating<br/>
+                <i></i></Card.Description>
               </Card.Content>
               <Card.Content extra>
                 <div className='ui two buttons'>
@@ -139,17 +139,17 @@ export class SimpleReactFileUpload extends React.Component {
             <br/>
             <br/> <hr/> <hr/>
           <div style={{marginRight: 115, marginTop: 125}}>
-            <h2 style={{display: 'inline'}}>Salesperson: </h2><p style={{display: 'inline', paddingRight: 450}}>  "Hello"</p>
+            <h2 style={{display: 'inline'}}>Salesperson: </h2><p style={{display: 'inline', paddingRight: 450}}>  "Okay.  In the technology sectory I also have Microsoft 41?"</p>
           </div>
           <br/> <hr/>
-          <h2 style={{display: 'inline'}}>Client:</h2><p style={{display: 'inline'}}>  "Hello"</p>
+          <h2 style={{display: 'inline'}}>Client:</h2><p style={{display: 'inline'}}>  "No, I am actually not interested in the technology sector at all.  I think machine learning is fake."</p>
           <div style={{position: 'absolute', right: 0, top: 395}}>
           <Card>
             <Card.Content>
               <Image floated='right' size='mini' src={down}/>
-              <Card.Header>Jenny Lawrence</Card.Header>
-              <Card.Meta>Sentiment Rating: 95%</Card.Meta>
-              <Card.Description>Jenny sounds interested in APPL Stock!</Card.Description>
+              <Card.Header>Microsoft</Card.Header>
+              <Card.Meta>Sentiment Rating: 14.88%</Card.Meta>
+              <Card.Description>Keywords: technology sector, machine learning</Card.Description>
             </Card.Content>
             <Card.Content extra>
               <div className='ui two buttons'>
@@ -168,17 +168,17 @@ export class SimpleReactFileUpload extends React.Component {
           <br/>
           <br/> <hr/> <hr/>
           <div style={{marginRight: 115, marginTop: 125}}>
-            <h2 style={{display: 'inline'}}>Salesperson: </h2><p style={{display: 'inline', paddingRight: 450}}>  "Hello"</p>
+            <h2 style={{display: 'inline'}}>Salesperson: </h2><p style={{display: 'inline', paddingRight: 450}}>  "Interesting, well how about financial sector?  Are you intersted in RBC 30?"</p>
           </div>
           <br/> <hr/>
-          <h2 style={{display: 'inline'}}>Client:</h2><p style={{display: 'inline'}}>  "Hello"</p>
+          <h2 style={{display: 'inline'}}>Client:</h2><p style={{display: 'inline'}}>  "Wow, that sounds great.  I will buy ten blocks!"</p>
           <div style={{position: 'absolute', right: 0, top: 675}}>
           <Card>
             <Card.Content>
               <Image floated='right' size='mini' src={up}/>
-              <Card.Header>Jenny Lawrence</Card.Header>
-              <Card.Meta>Sentiment Rating: 95%</Card.Meta>
-              <Card.Description>Jenny sounds interested in APPL Stock!</Card.Description>
+              <Card.Header>RBC 30</Card.Header>
+              <Card.Meta>Sentiment Rating: 97.45%</Card.Meta>
+              <Card.Description>Keywords: financial sector, RBC, blocks</Card.Description>
             </Card.Content>
             <Card.Content extra>
               <div className='ui two buttons'>
