@@ -63,7 +63,7 @@ export class SimpleReactFileUpload extends React.Component {
     const config = {
         headers: {
             'content-type': 'multipart/form-data',
-            'Authorization': "Bearer " + token
+            'Authorization': "Bearer " + toke4n
         }
     }
     console.log("lolololololol");
