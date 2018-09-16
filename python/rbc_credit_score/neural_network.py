@@ -26,6 +26,9 @@ def get_test_set(data,percentage=0.1):
 def mse(x,y):
     return np.sum((x-y)**2)/x.shape[0]
 
+def notch_accuracy(x,y,notch=0):
+    return np.sum(np.abs(x-y)<=notch)/x.shape[0]
+
 if __name__ == '__main__':
     npdata,truth,headers = get_numpy()
 
@@ -45,10 +48,12 @@ if __name__ == '__main__':
 
     train_indices,test_indices = get_test_set(npdata)
 
-    start_time = time.time()    
-    model.fit(npdata[train_indices,:],truth[train_indices],batch_size=128,epochs=10000,validation_split=0.1,verbose=0)
-    print('Finished in {} minutes'.format((time.time()-start_time)/60))
+##    start_time = time.time()    
+##    model.fit(npdata[train_indices,:],truth[train_indices],batch_size=128,epochs=10000,validation_split=0.1,verbose=0)
+##    print('Finished in {} minutes'.format((time.time()-start_time)/60))
 
+    model = load_model('model1.383.h5')
+    
     predictions = model.predict(npdata[test_indices,:])
     print('Prediction vs. truth for test set')
     print(np.append(predictions,truth[test_indices].reshape(-1,1),axis=1))
@@ -56,10 +61,12 @@ if __name__ == '__main__':
     print('MSE of training set: {}'.format(mse(model.predict(npdata[train_indices,:]),truth[train_indices].reshape(-1,1))))
     print('MSE of test set: {}'.format(mse(predictions,truth[test_indices].reshape(-1,1))))
 
-    model.save('model.h5')
+    print('Accuracy within 0 notches: {}'.format(notch_accuracy(predictions,truth[test_indices].reshape(-1,1),0)))
+    print('Accuracy within 1 notches: {}'.format(notch_accuracy(predictions,truth[test_indices].reshape(-1,1),1)))
+    print('Accuracy within 2 notches: {}'.format(notch_accuracy(predictions,truth[test_indices].reshape(-1,1),2)))
 
-##    model = load_model('model1.383.h5')
-##
+##    model.save('model.h5')
+
 ##    model_json = model.to_json()
 ##    with open("model.json","w") as json_file:
 ##        json_file.write(model_json)
